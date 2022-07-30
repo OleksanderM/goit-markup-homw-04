@@ -29,12 +29,34 @@ body{
     padding-right: 22px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
     color: #212121;
+}
+.modal-btn-hero:hover,
+.modal-btn-hero:focus {
+    background-color: #188CE8;
+}
+   
+.modal-btn-hero{
+padding-top: 6px;
+    padding-left: 22px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;  
+    background: #2196F3;
+    color: #FFFFFF;
 }
 
 .modal-btn:hover,
@@ -129,12 +151,16 @@ header{
 /*=======================/HEADER=============== */
 
 .description-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
 }
+
 .main-title{
     font-weight: 900;
     font-size: 44px;
@@ -269,6 +295,7 @@ header{
     gap: 8px;
     margin-bottom: 50px;
 }
+
 .device{
     display: flex;
     align-items: center;
@@ -291,14 +318,36 @@ header{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
-.card-content:hover,
-.card-imege:hover{
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+
+/* ============= PORTFOLIO ============= */
+.portfolio-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-list-item {
+    background-color:#FFFFFF;
+}
+.portfolio-link {
+    display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-item-wrapper {
+    border: 1px solid #ECECEC;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+
+/* ============= /PORTFOLIO ============= */
+
+/* ============= SOCIAL ============= */
 .social-list{
     display: flex;
     justify-content: center;
@@ -324,30 +373,9 @@ header{
 .social-list-link:focus .social-list-icon{
     fill: #FFFFFF;
 }
-.clients-list{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
-}
-.clients-list-icon{
-    display: flex;
-    align-items: center;
-    width: 168px;
-    height: 90px;
-    fill: #AFB1B8;
-}
 
-.clients-list-icon:hover,
-.clients-list-icon:focus {
-    fill: #2196F3;
-} 
-.clients-list-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+.social-list-icon-footer{
+    fill: #FFFFFF;
 }
 .social-list-link-footer{
     display: flex;
@@ -367,7 +395,38 @@ header{
 .social-list-link-footer:focus .social-list-icon {
     fill: #FFFFFF;
 }
+/* ============= /SOCIAL ============= */
 
+/* ============= CLIENTS ============= */
+.client-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.client-list-icon {
+    fill: currentColor;
+}
+
+.client-list-link:hover,
+.client-list-link:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+
+/* ============= /CLIENTS ============= */
 .teame{
     padding-top: 30px;
     margin-bottom: 10px;
